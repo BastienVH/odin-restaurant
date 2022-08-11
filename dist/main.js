@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"home\": () => (/* binding */ home)\n/* harmony export */ });\nfunction home() {\n  const element = document.createElement('div');\n  element.classList.add = 'main';\n\n  const para1 = document.createElement('p');\n  para1.innerText = 'Welcome to the Fry Shack, where you\\'ll get the best French fries in the state!\\n Take a moment to explore the menu, with our wide range of \"vleesekes\" and sauces (some of them homemade!).';\n  \n  element.appendChild(para1);\n  const para2 = document.createElement('p');\n  para2.innerText = 'If you\\'re ever in Antwerp, OH, make sure you drop by. You won\\'t regret it!';\n  \n  element.appendChild(para2);\n  return element;\n}\n\n\n\n//# sourceURL=webpack://odin-restaurant/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logo.png */ \"./src/logo.png\");\nconst content = document.getElementById('content');\n\n\nfunction header() {\n  const header = document.createElement('div');\n\n  // add header logo\n  const myLogo = new Image();\n  myLogo.src = _logo_png__WEBPACK_IMPORTED_MODULE_0__;\n  myLogo.id = 'logo';\n  header.appendChild(myLogo);\n\n  // add header text\n  const headerTxt = document.createElement('h1');\n  headerTxt.innerText = 'The Fry Shack';\n  header.appendChild(headerTxt);\n\n  return header;\n}\n\ncontent.appendChild(header());\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logo.png */ \"./src/logo.png\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\nconst content = document.getElementById('content');\n\n\n\nfunction header() {\n  const header = document.createElement('div');\n\n  // add header logo\n  const myLogo = new Image();\n  myLogo.src = _logo_png__WEBPACK_IMPORTED_MODULE_0__;\n  myLogo.id = 'logo';\n  header.appendChild(myLogo);\n\n  // add header text\n  const headerTxt = document.createElement('h1');\n  headerTxt.innerText = 'The Fry Shack';\n  header.appendChild(headerTxt);\n\n  return header;\n}\n\ncontent.appendChild(header());\ncontent.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_1__.home)());\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
 
 /***/ }),
 
@@ -57,6 +67,18 @@ eval("module.exports = __webpack_require__.p + \"4852a813e1c454921e5c.png\";\n\n
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -67,6 +89,11 @@ eval("module.exports = __webpack_require__.p + \"4852a813e1c454921e5c.png\";\n\n
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */

@@ -1,5 +1,6 @@
 const content = document.getElementById('content');
 import Logo from './logo.png';
+import { home } from './home';
 
 function header() {
   const header = document.createElement('div');
@@ -19,3 +20,4 @@ function header() {
 }
 
 content.appendChild(header());
+content.appendChild(home());
