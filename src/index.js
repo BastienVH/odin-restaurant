@@ -4,6 +4,7 @@ import { home } from './home';
 
 function header() {
   const header = document.createElement('div');
+  header.id = 'header';
 
   // add header logo
   const myLogo = new Image();
