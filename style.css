@@ -24,3 +24,15 @@ body {
 #main_section {
   margin: 1em 3em;
 }
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav div {
+  flex: 1;
+  padding: 6px;
+  border: 1px black solid;
+  text-align: center;
+}
