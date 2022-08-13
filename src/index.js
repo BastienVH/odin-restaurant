@@ -20,5 +20,14 @@ function header() {
   return header;
 }
 
+function mainSection() {
+  const main = document.createElement('div');
+  main.id = 'main_section';
+
+  main.appendChild(home());
+
+  return main;
+}
+
 content.appendChild(header());
-content.appendChild(home());
+content.appendChild(mainSection());
