@@ -24,9 +24,27 @@ function mainSection() {
   const main = document.createElement('div');
   main.id = 'main_section';
 
+  main.appendChild(nav());
   main.appendChild(home());
 
   return main;
+}
+
+function nav() {
+  const nav = document.createElement('nav');
+
+  nav.classList.add = 'nav';
+
+  const navArray = ['Home', 'Menu', 'Contact'];
+
+  for (let i = 0; i < navArray.length; i++) {
+    const element = document.createElement('div');
+    element.id = `${navArray[i]}`;
+    element.innerText = navArray[i];
+    nav.appendChild(element);
+  }
+
+  return nav;
 }
 
 content.appendChild(header());
