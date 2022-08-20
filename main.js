@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contact\": () => (/* binding */ contact)\n/* harmony export */ });\nfunction contact() {\n  const element = document.createElement('div');\n\n  element.classList.add = 'contact';\n\n  element.innerText = 'Here you can find the contact details of our friterie.';\n\n  return element;\n}\n\n\n\n//# sourceURL=webpack://odin-restaurant/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logo.png */ \"./src/logo.png\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\nconst content = document.getElementById('content');\n\n\n\n\nfunction header() {\n  const header = document.createElement('div');\n  header.id = 'header';\n\n  // add header logo\n  const myLogo = new Image();\n  myLogo.src = _logo_png__WEBPACK_IMPORTED_MODULE_0__;\n  myLogo.id = 'logo';\n  header.appendChild(myLogo);\n\n  // add header text\n  const headerTxt = document.createElement('h1');\n  headerTxt.innerText = 'The Fry Shack';\n  header.appendChild(headerTxt);\n\n  return header;\n}\n\nfunction mainSection() {\n  const main = document.createElement('div');\n  main.id = 'main_section';\n\n  main.appendChild(nav());\n  main.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_1__.home)());\n  main.appendChild((0,_menu__WEBPACK_IMPORTED_MODULE_2__.menu)());\n\n  return main;\n}\n\nfunction nav() {\n  const nav = document.createElement('nav');\n\n  nav.classList.add = 'nav';\n\n  const navArray = ['Home', 'Menu', 'Contact'];\n\n  for (let i = 0; i < navArray.length; i++) {\n    const element = document.createElement('div');\n    element.id = `${navArray[i]}`;\n    element.innerText = navArray[i];\n    nav.appendChild(element);\n  }\n\n  return nav;\n}\n\ncontent.appendChild(header());\ncontent.appendChild(mainSection());\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logo.png */ \"./src/logo.png\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\nconst content = document.getElementById('content');\n\n\n\n\n\nfunction header() {\n  const header = document.createElement('div');\n  header.id = 'header';\n\n  // add header logo\n  const myLogo = new Image();\n  myLogo.src = _logo_png__WEBPACK_IMPORTED_MODULE_0__;\n  myLogo.id = 'logo';\n  header.appendChild(myLogo);\n\n  // add header text\n  const headerTxt = document.createElement('h1');\n  headerTxt.innerText = 'The Fry Shack';\n  header.appendChild(headerTxt);\n\n  return header;\n}\n\nfunction mainSection() {\n  const main = document.createElement('div');\n  main.id = 'main_section';\n\n  main.appendChild(nav());\n  main.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_1__.home)());\n\n  return main;\n}\n\nfunction nav() {\n  const nav = document.createElement('nav');\n\n  nav.classList.add = 'nav';\n\n  const navArray = ['Home', 'Menu', 'Contact'];\n\n  for (let i = 0; i < navArray.length; i++) {\n    const element = document.createElement('div');\n    element.id = `${navArray[i]}`;\n    element.innerText = navArray[i];\n    nav.appendChild(element);\n  }\n\n  return nav;\n}\n\ncontent.appendChild(header());\ncontent.appendChild(mainSection());\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
 
 /***/ }),
 
