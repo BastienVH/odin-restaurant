@@ -1,6 +1,7 @@
 const content = document.getElementById('content');
 import Logo from './logo.png';
 import { home } from './home';
+import { menu } from './menu';
 
 function header() {
   const header = document.createElement('div');
