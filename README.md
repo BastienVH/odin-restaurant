@@ -4,3 +4,6 @@ My implementation for the [restaurant page](https://www.theodinproject.com/lesso
 ## Time spent
 Project status: **NOT FINISHED**.
 I spent 1 hours and 7 minutes on this project.
+
+## What I learned
+- When adding a click event, make sure you add it without brackets, or it will get invoked immediately.
