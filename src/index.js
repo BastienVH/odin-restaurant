@@ -1,10 +1,14 @@
-const content = document.getElementById('content');
 import Logo from './logo.png';
 import { home } from './home';
 import { menu } from './menu';
 import { contact } from './contact';
 
-function header() {
+const content = document.getElementById('content');
+
+createHeader();
+createMainSection();
+
+function createHeader() {
   const header = document.createElement('div');
   header.id = 'header';
 
@@ -19,17 +23,17 @@ function header() {
   headerTxt.innerText = 'The Fry Shack';
   header.appendChild(headerTxt);
 
-  return header;
+  content.appendChild(header);
 }
 
-function mainSection() {
+function createMainSection() {
   const main = document.createElement('div');
   main.id = 'main_section';
 
   main.appendChild(nav());
   main.appendChild(home());
 
-  return main;
+  content.appendChild(main);
 }
 
 function nav() {
@@ -48,6 +52,3 @@ function nav() {
 
   return nav;
 }
-
-content.appendChild(header());
-content.appendChild(mainSection());
