@@ -8,6 +8,10 @@ const content = document.getElementById('content');
 createHeader();
 createMainSection();
 
+const main = document.getElementById('main_section');
+// adding the contents of the menu page to the main section does not work
+menu();
+
 function createHeader() {
   const header = document.createElement('div');
   header.id = 'header';
