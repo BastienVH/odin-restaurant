@@ -7,6 +7,7 @@ const content = document.getElementById('content');
 
 createHeader();
 createMainSection();
+addClickEvents();
 
 function createHeader() {
   const header = document.createElement('div');
@@ -51,4 +52,22 @@ function nav() {
   }
 
   return nav;
+}
+
+function addClickEvents() {
+  const main = document.getElementById('main_section');
+  const btnHome = document.getElementById('Home');
+  const btnMenu = document.getElementById('Menu');
+  const btnContact = document.getElementById('Contact');
+
+  // add event listeners
+  btnHome.addEventListener('click', () => {
+    main.appendChild(home());
+  });
+  btnMenu.addEventListener('click', () => {
+    main.appendChild(menu())
+  });
+  btnContact.addEventListener('click', () => {
+    main.appendChild(contact())
+  });
 }
