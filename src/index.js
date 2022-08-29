@@ -62,12 +62,21 @@ function addClickEvents() {
 
   // add event listeners
   btnHome.addEventListener('click', () => {
+    removeContent();
     main.appendChild(home());
   });
   btnMenu.addEventListener('click', () => {
+    removeContent();
     main.appendChild(menu())
   });
   btnContact.addEventListener('click', () => {
+    removeContent();
     main.appendChild(contact())
   });
+}
+
+function removeContent() {
+  const main = document.getElementById('main_section');
+
+  main.removeChild(main.lastChild);
 }
