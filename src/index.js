@@ -7,7 +7,14 @@ const content = document.getElementById('content');
 
 createHeader();
 createMainSection();
+
+const main = document.getElementById('main_section');
+const btnHome = document.getElementById('Home');
+const btnMenu = document.getElementById('Menu');
+const btnContact = document.getElementById('Contact');
+
 addClickEvents();
+firstLoad();
 
 function createHeader() {
   const header = document.createElement('div');
@@ -32,7 +39,6 @@ function createMainSection() {
   main.id = 'main_section';
 
   main.appendChild(nav());
-  main.appendChild(home());
 
   content.appendChild(main);
 }
@@ -55,28 +61,40 @@ function nav() {
 }
 
 function addClickEvents() {
-  const main = document.getElementById('main_section');
-  const btnHome = document.getElementById('Home');
-  const btnMenu = document.getElementById('Menu');
-  const btnContact = document.getElementById('Contact');
 
   // add event listeners
   btnHome.addEventListener('click', () => {
     removeContent();
+    removeAllActiveClasses();
     main.appendChild(home());
+    btnHome.classList.add('active');
   });
   btnMenu.addEventListener('click', () => {
     removeContent();
+    removeAllActiveClasses();
     main.appendChild(menu())
+    btnMenu.classList.add('active');
   });
   btnContact.addEventListener('click', () => {
     removeContent();
+    removeAllActiveClasses();
     main.appendChild(contact())
+    btnContact.classList.add('active');
   });
 }
 
 function removeContent() {
-  const main = document.getElementById('main_section');
-
   main.removeChild(main.lastChild);
+}
+
+function firstLoad() {
+  main.appendChild(home());
+  btnHome.classList.add('active');
+}
+
+function removeAllActiveClasses() {
+  const btns = document.querySelectorAll('nav div');
+  for (let i = 0; i < btns.length; i++) {
+    btns[i].classList.remove('active');
+  }
 }
