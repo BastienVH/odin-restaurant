@@ -28,6 +28,7 @@ body {
 nav {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 nav div {
@@ -35,4 +36,8 @@ nav div {
   padding: 6px;
   border: 1px black solid;
   text-align: center;
+}
+.active {
+  background-color: aqua;
+  color: white;
 }
