@@ -6,4 +6,4 @@ Project status: **NOT FINISHED**.
 I spent 2 hours and 14 minutes on this project.
 
 ## What I learned
-- When adding a click event, make sure you add it without brackets, or it will get invoked immediately.
+- When adding a click event, make sure you add it without brackets - or as an arrow function - or it will get invoked immediately.
