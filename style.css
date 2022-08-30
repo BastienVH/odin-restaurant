@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #04030f;
   opacity: 60%;
   color: white;
 }
@@ -31,13 +31,19 @@ nav {
   cursor: pointer;
 }
 
+#main_section {
+  background-color: #e7e393;
+  border: 1px #854d27 solid;
+}
+
 nav div {
   flex: 1;
   padding: 6px;
-  border: 1px black solid;
+  border: 1px #854d27 solid;
   text-align: center;
+  background-color: #f4c95d;
 }
 .active {
-  background-color: aqua;
+  background-color: #dd7230;
   color: white;
 }
