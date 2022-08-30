@@ -16,7 +16,7 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contact\": () => (/* binding */ contact)\n/* harmony export */ });\nfunction contact() {\n  const element = document.createElement('div');\n\n  element.classList.add = 'contact';\n\n  element.innerText = 'Here you can find the contact details of our friterie.';\n\n  return element;\n}\n\n\n\n//# sourceURL=webpack://odin-restaurant/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contact\": () => (/* binding */ contact)\n/* harmony export */ });\nfunction contact() {\n  const element = document.createElement('div');\n  element.classList.add('content');\n\n  const para1 = document.createElement('p');\n  para1.innerText = 'Here you can find the contact details of our friterie.';\n\n  element.appendChild(para1);\n\n  return element;\n}\n\n\n\n//# sourceURL=webpack://odin-restaurant/./src/contact.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"home\": () => (/* binding */ home)\n/* harmony export */ });\nfunction home() {\n  const element = document.createElement('div');\n  element.classList.add = 'main';\n\n  const para1 = document.createElement('p');\n  para1.innerText = 'Welcome to the Fry Shack, where you\\'ll get the best French fries in the state!\\n Take a moment to explore the menu, with our wide range of \"vleesekes\" and sauces (some of them homemade!).';\n  \n  element.appendChild(para1);\n  const para2 = document.createElement('p');\n  para2.innerText = 'If you\\'re ever in Antwerp, OH, make sure you drop by. You won\\'t regret it!';\n  \n  element.appendChild(para2);\n  return element;\n}\n\n\n\n//# sourceURL=webpack://odin-restaurant/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"home\": () => (/* binding */ home)\n/* harmony export */ });\nfunction home() {\n  const element = document.createElement('div');\n  element.classList.add('content');\n\n  const para1 = document.createElement('p');\n  para1.innerText = 'Welcome to the Fry Shack, where you\\'ll get the best French fries in the state!\\n Take a moment to explore the menu, with our wide range of \"vleesekes\" and sauces (some of them homemade!).';\n  \n  element.appendChild(para1);\n  const para2 = document.createElement('p');\n  para2.innerText = 'If you\\'re ever in Antwerp, OH, make sure you drop by. You won\\'t regret it!';\n  \n  element.appendChild(para2);\n  return element;\n}\n\n\n\n//# sourceURL=webpack://odin-restaurant/./src/home.js?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _log
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menu\": () => (/* binding */ menu)\n/* harmony export */ });\nfunction menu() {\n  const element = document.createElement('div');\n\n  element.classList.add = 'menu';\n\n  element.innerText = 'This is the menu of our friterie.';\n\n  return element;\n}\n\n\n\n//# sourceURL=webpack://odin-restaurant/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menu\": () => (/* binding */ menu)\n/* harmony export */ });\nfunction menu() {\n  const element = document.createElement('div');\n  element.classList.add('content');\n\n  const para1 = document.createElement('p');\n  para1.innerText = 'This is the menu of our friterie.';\n\n  element.appendChild(para1);\n\n  return element;\n}\n\n\n\n//# sourceURL=webpack://odin-restaurant/./src/menu.js?");
 
 /***/ }),
 

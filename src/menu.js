@@ -1,9 +1,11 @@
 function menu() {
   const element = document.createElement('div');
+  element.classList.add('content');
 
-  element.classList.add = 'menu';
+  const para1 = document.createElement('p');
+  para1.innerText = 'This is the menu of our friterie.';
 
-  element.innerText = 'This is the menu of our friterie.';
+  element.appendChild(para1);
 
   return element;
 }
