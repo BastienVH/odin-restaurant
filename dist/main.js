@@ -16,7 +16,7 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contact\": () => (/* binding */ contact)\n/* harmony export */ });\nfunction contact() {\n  const element = document.createElement('div');\n  element.classList.add('content');\n\n  const para1 = document.createElement('p');\n  para1.innerText = 'Here you can find the contact details of our friterie.';\n\n  element.appendChild(para1);\n\n  return element;\n}\n\n\n\n//# sourceURL=webpack://odin-restaurant/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contact\": () => (/* binding */ contact)\n/* harmony export */ });\nfunction contact() {\n  const element = document.createElement('div');\n  element.classList.add('content');\n\n  const para1 = document.createElement('p');\n  para1.innerText = 'Here you can find the contact details of our friterie.';\n  element.appendChild(para1);\n  \n  const p2 = document.createElement('p');\n  p2.innerText = 'Come grab a bite to eat at one of our tables, or take your order to go.\\nEither way you\\'ll find us at 211 E River Street, Antwerp, OH 45813.'\n  element.appendChild(p2);\n\n  return element;\n}\n\n\n\n//# sourceURL=webpack://odin-restaurant/./src/contact.js?");
 
 /***/ }),
 
