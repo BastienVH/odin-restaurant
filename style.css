@@ -42,10 +42,16 @@ nav {
 nav div {
   flex: 1;
   padding: 6px;
-  border: 1px #854d27 solid;
+  border: 1px #854d27;
+  border-style: none solid solid none;
   text-align: center;
   background-color: #f4c95d;
 }
+
+nav div:last-child {
+  border-right-style: none;
+}
+
 .active {
   background-color: #dd7230;
   color: white;
