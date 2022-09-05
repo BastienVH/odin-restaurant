@@ -70,3 +70,7 @@ nav div:last-child {
   background-color: #dd7230;
   color: white;
 }
+
+.content {
+  padding: 1em 2em;
+}
