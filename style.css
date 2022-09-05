@@ -22,8 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #04030f;
-  opacity: 60%;
+  background-color: #04030f5e;
   color: white;
   font-family: 'Fugaz One', cursive;
   font-size: 32px;
