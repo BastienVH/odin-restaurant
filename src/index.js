@@ -60,6 +60,17 @@ function nav() {
   return nav;
 }
 
+function appendFooter() {
+  const footer = document.createElement('footer');
+
+  const credit = document.createElement('p');
+  credit.innerHTML = 'Background image by <a href="https://pixabay.com/users/matthiasboeckel-3930681/">matthiasboeckel</a> from <a href="https://pixabay.com/">Pixabay</a>';
+
+  footer.appendChild(credit);
+
+  content.appendChild(footer);
+}
+
 function addClickEvents() {
 
   // add event listeners
@@ -90,6 +101,7 @@ function removeContent() {
 function firstLoad() {
   main.appendChild(home());
   btnHome.classList.add('active');
+  appendFooter();
 }
 
 function removeAllActiveClasses() {
