@@ -36,7 +36,8 @@ body {
 }
 
 #main_section {
-  margin: 1em 3em;
+  width: clamp( 400px, 90vw, 800px);
+  margin: 1em auto;
 }
 
 nav {
