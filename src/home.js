@@ -1,6 +1,6 @@
 function home() {
   const element = document.createElement('div');
-  element.classList.add = 'main';
+  element.classList.add('content');
 
   const para1 = document.createElement('p');
   para1.innerText = 'Welcome to the Fry Shack, where you\'ll get the best French fries in the state!\n Take a moment to explore the menu, with our wide range of "vleesekes" and sauces (some of them homemade!).';

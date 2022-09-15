@@ -1,18 +1,32 @@
+/* Color Palette Codes: #854d27, #dd7230, #f4c95d, #e7e393, #04030f */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Major+Mono+Display&family=Montserrat:wght@500&display=swap');
+
+/* Fonts:
+Title: font-family: 'Fugaz One', cursive;
+Menu items: font-family: 'Major Mono Display', monospace;
+Other text: font-family: 'Montserrat', sans-serif; */
+
+
+
+html {
+  background: url(./bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100%;
+}
+
 body {
   margin: 0;
-  background-image: url(./bg.jpg);
-  background-size: auto 100vh;
-  background-repeat: no-repeat;
-  background-position-x: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  opacity: 60%;
+  background-color: #04030f5e;
   color: white;
+  font-family: 'Fugaz One', cursive;
+  font-size: 32px;
 }
 
 #header #logo {
@@ -22,17 +36,48 @@ body {
 }
 
 #main_section {
-  margin: 1em 3em;
+  width: clamp( 400px, 90vw, 800px);
+  margin: 1em auto;
 }
 
 nav {
   display: flex;
   justify-content: center;
+  cursor: pointer;
+}
+
+#main_section {
+  background-color: #e7e393;
+  border: 1px #854d27 solid;
 }
 
 nav div {
   flex: 1;
   padding: 6px;
-  border: 1px black solid;
+  border: 1px #854d27;
+  border-style: none solid solid none;
   text-align: center;
+  background-color: #f4c95d;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 24px;
+}
+
+nav div:last-child {
+  border-right-style: none;
+}
+
+.active {
+  background-color: #dd7230;
+  color: white;
+}
+
+.content {
+  padding: 1em 2em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
