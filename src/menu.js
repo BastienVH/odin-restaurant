@@ -1,4 +1,5 @@
 function menu() {
+  const main = document.getElementById('main');
   const element = document.createElement('div');
   element.classList.add('content');
 
@@ -7,7 +8,7 @@ function menu() {
 
   element.appendChild(para1);
 
-  return element;
+  main.appendChild(element);
 }
 
 export { menu };
